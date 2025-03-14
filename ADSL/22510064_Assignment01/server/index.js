@@ -7,15 +7,13 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
-// MySQL connection
 const db = mysql.createConnection({
-  host: '192.168.216.224',
+  host: '127.0.0.1',
   user: 'demo', // Change to your MySQL username
-  password: 'demo', // Change to your MySQL password
+  password: 'allubb', // Change to your MySQL password
   database: 'cse_companies_db'
 });
 
